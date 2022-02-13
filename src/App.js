@@ -1,5 +1,7 @@
 import "./App.css";
 import DayForecast from "./DayForecast";
+import SearchBar from "./SearchBar";
+import React from "react";
 
 export default function App() {
   return (
