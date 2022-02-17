@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./SearchBar.css";
 
 export default function SearchBar() {
   let [cityName, setCityName] = useState("");
@@ -30,7 +31,7 @@ export default function SearchBar() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="search"
           className="search-city"
@@ -40,12 +41,13 @@ export default function SearchBar() {
 
         <input type="submit" className="location-city" value="search" />
       </form>
-
-      <h2>{cityName}</h2>
-      <h2>{description}</h2>
-      <h2>Temperature: {temperature}°C</h2>
-      <h2>Wind: {wind} km/h</h2>
-      <h2>Humidity: {humidity}</h2>
+      <div className="Weather-Forecast">
+        <h2 className="CityName">{cityName}</h2>
+        <h4 className="description">{description}</h4>
+        <h5 className="Temperature">Temperature: {temperature}°C</h5>
+        <h5 className="Wind">Wind: {wind} km/h</h5>
+        <h5 className="Humidity">Humidity: {humidity}</h5>
+      </div>
     </div>
   );
 }

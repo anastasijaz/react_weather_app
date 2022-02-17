@@ -1,34 +1,33 @@
 import React from "react";
+import "./DayForecast.css";
 
 export default function DayForecast(props) {
   return (
     <div className="row">
       <div className="col-3">
-        <h4 className="description" id="description">
-          windy
-        </h4>
-        <p className="currentTime">12:30</p>{" "}
-        <p className="currentDate">15.01.2022</p>
+        <ul className="Times">
+          <li className="Time">12:30</li>
+          <li className="Date">15.03.2022</li>
+        </ul>
       </div>
 
-      <div className="col-3"></div>
       <div className="col-3">
-        <div className="col-3">
-          <p className="currentTemp" id="sun">
-            20°C
-          </p>
-        </div>
-
         <div className="row">
-          <div className="col-3">
-            <button type="button" className="bnt-metric" id="metric-value">
-              °C
-            </button>
+          <div className="col-2">
+            <input
+              type="submit"
+              className="bnt-metric"
+              id="metric-value"
+              value="°C"
+            />
           </div>
-          <div className="col-3">
-            <button type="button" className="bnt-imperial" id="imperial-value">
-              °F
-            </button>
+          <div className="col-2">
+            <input
+              type="button"
+              className="bnt-imperial"
+              id="imperial-value"
+              value="°F"
+            />
           </div>
         </div>
       </div>

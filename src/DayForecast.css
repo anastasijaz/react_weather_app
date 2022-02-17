@@ -1,0 +1,25 @@
+.Time {
+  text-align: left;
+}
+
+.Date {
+  text-align: left;
+}
+
+.bnt-imperial {
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border-color: #f03f35;
+  background-color: #ff7777;
+  font-family: "Abril Fatface", serif;
+}
+
+.bnt-metric {
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border-color: #f03f35;
+  background-color: #ff7777;
+  font-family: "Abril Fatface", serif;
+}
