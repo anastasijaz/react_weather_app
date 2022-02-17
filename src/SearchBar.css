@@ -6,3 +6,6 @@
   border-radius: 20%;
   border-color: #f03f35;
 }
+.li {
+  list-style-type: none;
+}
