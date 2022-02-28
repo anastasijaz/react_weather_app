@@ -1,11 +1,39 @@
 .Weather-Forecast {
   text-align: left;
+  list-style: none;
 }
 
-.search-form {
-  border-radius: 20%;
-  border-color: #f03f35;
+.Icon {
+  text-align: right;
 }
-.li {
-  list-style-type: none;
+
+h2 {
+  font-size: large;
+}
+
+.bnt-imperial {
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border-color: #f03f35;
+  background-color: #ff7777;
+  font-family: "Abril Fatface", serif;
+}
+
+.bnt-metric {
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border-color: #f03f35;
+  background-color: #ff7777;
+  font-family: "Abril Fatface", serif;
+}
+
+.search-city {
+  border-radius: 15px;
+  border-color: #f03f35;
+  border-width: 2px;
+  background-color: #b7e3e4;
+  font-family: "Abril Fatface", serif;
+  align-items: center;
 }

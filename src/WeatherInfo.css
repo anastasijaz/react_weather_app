@@ -1,0 +1,36 @@
+.City {
+  font-family: "Abril Fatface", serif;
+  font-size: 50px;
+  font-weight: 50;
+}
+.Time {
+  font-family: "Work Sans", sans-serif;
+}
+
+.Values {
+  list-style-type: none;
+  text-align: left;
+}
+
+.WeatherMain {
+  font-family: "Work Sans", sans-serif;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.Temperature {
+  font-size: 30px;
+  font-weight: 10;
+}
+
+.Description {
+  font-size: 15px;
+  font-weight: 10;
+}
+
+.WeatherInformation {
+  font-family: "Work Sans", sans-serif;
+  list-style-type: none;
+  margin-top: 20px;
+  text-align: left;
+}

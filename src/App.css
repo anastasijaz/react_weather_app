@@ -2,6 +2,8 @@
   text-align: center;
   background-color: #b7e3e4;
   margin: 50px 100px;
+  border-radius: 10%;
+  border-color: #f03f35;
 }
 body {
   background-color: #b7e3e4;
