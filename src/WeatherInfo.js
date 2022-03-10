@@ -15,7 +15,6 @@ export default function WeatherInfo(props) {
               <FormattedDate date={props.data.date} />
             </li>
           </ul>
-          <TempConversion />
         </div>
         <div className="col-4">
           <div className="Icon">
@@ -23,7 +22,7 @@ export default function WeatherInfo(props) {
           </div>
           <ul className="WeatherMain">
             <li className="Temperature">
-              {Math.round(props.data.temperature)} °C
+              <TempConversion />
             </li>
             <li className="Description"> {props.data.description}</li>
           </ul>
