@@ -1,6 +1,5 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather/build/ReactAnimatedWeather";
-import { propTypes } from "react-bootstrap/esm/Image";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherIcon(props) {
   console.log(props.code);
@@ -26,9 +25,9 @@ export default function WeatherIcon(props) {
   };
   return (
     <ReactAnimatedWeather
-      icon={codeMapping[propTypes.code]}
-      color="#1e1e1e"
-      size={64}
+      icon={codeMapping[props.code]}
+      color="#eeeee"
+      size={props.size}
       animate={true}
     />
   );

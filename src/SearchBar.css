@@ -37,3 +37,8 @@ h2 {
   font-family: "Abril Fatface", serif;
   align-items: center;
 }
+
+.iconURL {
+  size: 150px;
+  color: black;
+}

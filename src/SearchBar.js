@@ -19,7 +19,8 @@ export default function SearchBar(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       city: response.data.name,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      iconUrl: response.data.weather[0].icon,
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   function search() {
@@ -51,6 +52,7 @@ export default function SearchBar(props) {
 
           <input type="submit" className="location-city" value="search" />
         </form>
+
         <WeatherInfo data={weatherData} />
       </div>
     );
