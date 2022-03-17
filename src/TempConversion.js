@@ -2,36 +2,40 @@ import React, { useState } from "react";
 
 export default function TempConversion(props) {
   const [unit, setUnit] = useState("Celcius");
-  function convertToFahrenheit(event) {
+  function showFahrenheit(event) {
     event.preventDefault();
-    setUnit = "Fahrenheit";
+    setUnit("fahrenheit");
   }
+  function showCelcius(event) {
+    event.preventDefault();
+    setUnit("Celcius");
+  }
+  function fahrenheit() {
+    return (props.celcius * 9) / 5 + 32;
+  }
+
   if (unit === "Celcius") {
     return (
-      <ul>
-        <li className="Temperature">{Math.round(props.data.temperature)} °C</li>
-        <div className="row">
-          <div className="col-2">
-            <input
-              type="submit"
-              className="bnt-metric"
-              id="metric-value"
-              value="°C"
-              onClick={convertToFahrenheit}
-            />
-          </div>
-          <div className="col-2">
-            <input
-              type="button"
-              className="bnt-imperial"
-              id="imperial-value"
-              value="°F"
-            />
-          </div>
-        </div>
-      </ul>
+      <div className="WeatherTemp">
+        <span className="temperature">{Math.round(props.celcius)} </span>
+        <span className="unit">
+          °C|{""}
+          <a href="/" onClick={showFahrenheit}>
+            °F
+          </a>
+        </span>
+      </div>
     );
   } else {
-    return "°F";
+    return (
+      <div className="WeatherTemp">
+        <span className="temperature">{Math.round(fahrenheit())}</span>
+        <span className="unit">
+          <a href="/" onClick={showCelcius}>
+            °C
+          </a>
+        </span>
+      </div>
+    );
   }
 }
