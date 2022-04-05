@@ -20,9 +20,11 @@ export default function WeeklyForecast(props) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
-                  <DayForecast data={dailyForecast} />
+                  <DayForecast data={dailyForecast} />{" "}
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
