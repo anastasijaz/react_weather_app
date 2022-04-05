@@ -3,6 +3,7 @@ import axios from "axios";
 import "./SearchBar.css";
 import { TailSpin } from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo";
+import WeeklyForecast from "./WeeklyForecast";
 
 export default function SearchBar(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -13,6 +14,7 @@ export default function SearchBar(props) {
 
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -54,6 +56,7 @@ export default function SearchBar(props) {
         </form>
 
         <WeatherInfo data={weatherData} />
+        <WeeklyForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

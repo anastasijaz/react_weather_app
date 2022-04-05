@@ -11,24 +11,6 @@ h2 {
   font-size: large;
 }
 
-.bnt-imperial {
-  align-items: center;
-  text-align: center;
-  border-radius: 50%;
-  border-color: #f03f35;
-  background-color: #ff7777;
-  font-family: "Abril Fatface", serif;
-}
-
-.bnt-metric {
-  align-items: center;
-  text-align: center;
-  border-radius: 50%;
-  border-color: #f03f35;
-  background-color: #ff7777;
-  font-family: "Abril Fatface", serif;
-}
-
 .search-city {
   border-radius: 15px;
   border-color: #f03f35;
@@ -37,7 +19,13 @@ h2 {
   font-family: "Abril Fatface", serif;
   align-items: center;
 }
-
+.location-city {
+  border-radius: 15px;
+  font-family: "Abril Fatface", serif;
+  border-color: #f03f35;
+  border-width: 2px;
+  background-color: #f03f35;
+}
 .iconURL {
   size: 150px;
   color: black;

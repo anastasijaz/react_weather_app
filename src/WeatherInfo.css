@@ -24,8 +24,8 @@
 }
 
 .Description {
-  font-size: 15px;
-  font-weight: 10;
+  font-size: 20px;
+  font-weight: 100px;
 }
 
 .WeatherInformation {
@@ -36,4 +36,9 @@
 }
 .Icon {
   size: 10px;
+  align-items: center;
+}
+.Humidity.Wind {
+  font-size: 20px;
+  font-weight: 100px;
 }
