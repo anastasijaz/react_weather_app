@@ -26,7 +26,7 @@ export default function DayForecast(props) {
         <div className="col-2">
           <h4 className="Day"> {day()}</h4>
           <h5>
-            <WeatherIcon code={props.data.weather[0].icon} size={15} />{" "}
+            <WeatherIcon code={props.data.weather[0].icon} size={15} />
           </h5>
           <h6>
             {minTemp()}| {maxTemp()}
