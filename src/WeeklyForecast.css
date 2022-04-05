@@ -11,8 +11,6 @@ h5 {
 
 .WeeklyUpdate {
   align-items: center;
-  border: solid #f03f35;
-  border-width: 3px;
   border-radius: 30px;
   padding: 25px;
 }

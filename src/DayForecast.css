@@ -1,0 +1,17 @@
+.maxTemp {
+  font-family: "Work Sans", sans-serif;
+  font-size: medium;
+}
+.minTemp {
+  font-family: "Work Sans", sans-serif;
+  font-size: medium;
+}
+.Day {
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+  font-weight: 300;
+}
+
+.icon {
+  align-items: center;
+}
