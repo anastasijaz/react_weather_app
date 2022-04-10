@@ -51,7 +51,6 @@ export default function SearchBar(props) {
             autofocus="on"
             onChange={handleCityChange}
           />
-
           <input type="submit" className="location-city" value="search" />
         </form>
 

@@ -3,6 +3,7 @@ import "./DayForecast.css";
 import WeatherIcon from "./WeatherIcon";
 
 export default function DayForecast(props) {
+  console.log(props.data);
   function maxTemp() {
     let temperature = Math.round(props.data.temp.max);
     return ` ${temperature}°C `;
@@ -29,7 +30,7 @@ export default function DayForecast(props) {
             <WeatherIcon code={props.data.weather[0].icon} size={15} />
           </h5>
           <h6>
-            {minTemp()}| {maxTemp()}
+            {minTemp()} | {maxTemp()}
           </h6>
         </div>
       </div>
